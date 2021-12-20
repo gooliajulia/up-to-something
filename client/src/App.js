@@ -1,20 +1,28 @@
-
+import { Route } from 'react-router-dom';
 import './App.css';
 import Layout from './layouts/Layout';
+import Projects from './screens/Projects';
+import WhoIAm from './screens/WhoIAm';
+import Contact from './screens/Contact';
+import Testimonials from './screens/Testimonials';
 
 function App() {
   return (
     <div className="App">
       <Layout >
+        <Route path='/projects' >
+          <Projects />
+        </Route>
+        <Route path='/about-me'>
+          <WhoIAm />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+        <Route path='/testimonials'>
+          <Testimonials />
+        </Route>
       </Layout>
-      <div className='lined thin'>
-        <h4>- take out the trash</h4>
-        <h4>- do the dishes</h4>
-        <h4>- update resume</h4>
-      </div>
-      <div className='gradient'>
-        
-      </div>
     </div>
   );
 }

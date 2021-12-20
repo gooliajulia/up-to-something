@@ -1,14 +1,24 @@
 import './Layout.css';
+import { Link } from 'react-router-dom';
 
 export default function Layout({children}) {
     return (
         <div>
             <nav>
-                <h3>Projects</h3>
-                <h3>About Me</h3>
-                <h3>Contact</h3>
-                <h3>Testimonials</h3>
+                <Link to='/projects'>
+                    <h3>Projects</h3>
+                </Link>
+                <Link to='/about-me'>
+                    <h3>Who I Am</h3>
+                </Link>
+                <Link to='/contact'>
+                    <h3>Contact Me</h3>
+                </Link>
+                <Link to='/testimonials' >
+                    <h3>Testimonials</h3>
+                </Link>
             </nav>
+            {children}
         </div>
     )
 }

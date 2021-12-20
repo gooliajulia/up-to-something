@@ -19,9 +19,15 @@ h3 {
     background-size: 100% 0.2em;
     background-position: 0 88%;
     transition: background-size 0.25s ease-in;
+    z-index: 1;
 }
 
 h3:hover {
     background-size: 100% 75%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
