@@ -28,17 +28,6 @@ h2 {
   top: 0px;
 }
 
-img {
-  height: 350px;
-  width: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  position: absolute;
-  left: 0px;
-  top: 180px;
-  box-shadow: 0 0 10px rgb(196, 188, 182);
-}
-
 
 div.lined.thin {
   border: solid 1px #41403e9f;
