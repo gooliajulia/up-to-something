@@ -1,5 +1,5 @@
 .projects {
-    height: 90vh;
+    /* height: 90vh; */
     display: flex;
     flex-direction: column;
 }
@@ -7,7 +7,7 @@
 
 div.project {
     width: 90vw;
-    height: fit-content;
+    height: max-content;
     background-color: white;
     margin: auto;
     border-radius: 15px;
@@ -20,8 +20,9 @@ div.project {
 }
 
 .project img {
-        height: 65vh;
-        object-fit: cover;
+        width: 55vw;
+        height: fit-content;
+        object-fit: contain;
         border-radius: 5px;
         box-shadow: 0 0 10px rgb(196, 188, 182);
 }
@@ -30,7 +31,6 @@ div.project-details {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    row-gap: 20px;
     align-items: flex-start;
 }
 
@@ -49,4 +49,14 @@ div.project-details {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 0px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+h5.description {
+    font-style: italic;
+    text-align: left;
+    margin: 15px 0;
+    font-size: 15px;
+    
 }
