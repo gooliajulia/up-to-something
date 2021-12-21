@@ -20,7 +20,7 @@ export default function Projects() {
                     <br/>
                     <h5><span className='bold'>Tech used: </span>React, Ruby on Rails, React Router, Netflify and Heroku Deployment</h5>
                     <h5><span className='bold'>GitHub Link: <a href='https://github.com/gooliajulia/foodies/blob/main/README.md' target="_blank" >Foodies App GitHub Repo</a></span></h5>
-                    <h5><span className='bold'>Lessons Learned:</span></h5>
+                    <h5><span className='bold'>Lessons Learned: this project challenged me to design a dynamic layout with left side nav, and a right side feed. I created a main container to house the changing components as children of the layout and to hold much of the state. Then there was the added challenging of problem-solving a responsive design on smaller screens. This project helped me strengthen my understanding of how react works, and appreciate just how dynamic it can be.</span></h5>
                     <h5><span className='bold'>Future Development:</span></h5>
                 </div>
             </div>
