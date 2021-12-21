@@ -30,6 +30,7 @@ div.project-details {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    row-gap: 20px;
     align-items: flex-start;
 }
 
@@ -41,4 +42,11 @@ div.project-details {
 .project-details h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    margin: 0px;
+}
+
+.project-details h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0px;
 }
