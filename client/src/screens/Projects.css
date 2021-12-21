@@ -20,7 +20,7 @@ div.project {
 }
 
 .project img {
-        width: 55vw;
+        width: 50vw;
         height: fit-content;
         object-fit: contain;
         border-radius: 5px;
@@ -34,6 +34,23 @@ div.project-details {
     align-items: flex-start;
 }
 
+span.bold {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 0 30px;
+}
+
+li {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
 .project-details h3 {
     font-size: 25px;
     margin: 0;
@@ -45,18 +62,29 @@ div.project-details {
     margin: 0px;
 }
 
+h5.mission {
+    margin: 0;
+    padding: 0;
+}
+
 .project-details h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 0px;
     margin-bottom: 15px;
     font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
 }
 
 h5.description {
     font-style: italic;
     text-align: left;
-    margin: 15px 0;
+    margin: 9px 0;
     font-size: 15px;
     
+}
+
+a {
+    font-weight: 300;
 }
