@@ -88,3 +88,20 @@ h5.description {
 a {
     font-weight: 300;
 }
+
+img.mobile {
+    height: 300px;
+    width: min-content;
+}
+
+img.tablet {
+    height: 300px;
+    width: min-content;
+}
+
+div.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
