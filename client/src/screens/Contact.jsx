@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import './Contact.css';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ export default function Contact() {
         email: '',
         message: ''
     });
+
+    const { name, email, message } = formData;
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -42,21 +45,20 @@ export default function Contact() {
 
 
     return (
-        <div>
-            <p>Contact</p>
+        <div className="contact">
             <form id='contact-form' onSubmit={(e) => handleSubmit(e)} method="POST">
-                <div className='form-group'>
+                {/* <div className='form-group'> */}
                     <label htmlFor="name">Name</label>
-                    <input name="name" type='text' className='form-control' onChange={(e)=> handleChange(e)}/>
-                </div>
-                <div className="form-group">
+                    <input name="name" type='text' className='form-control' value={name} onChange={(e)=> handleChange(e)}/>
+                {/* </div> */}
+                {/* <div className="form-group"> */}
                     <label htmlFor="exampleInputEmail1">Email Address</label>
-                    <input name="email" type='email' className='form-control'  onChange={(e) => handleChange(e)}/>
-                </div>
-                <div className='form-group'>
+                    <input name="email" type='email' className='form-control'  value={email} onChange={(e) => handleChange(e)}/>
+                {/* </div> */}
+                {/* <div className='form-group'> */}
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" className='form-control' rows="5" onChange={(e) => handleChange(e)}></textarea>
-                </div>
+                    <textarea name="message" className='form-control' rows="5" value={message} onChange={(e) => handleChange(e)}></textarea>
+                {/* </div> */}
                 <button type='submit' className="btn btn-primary">Submit</button>
             </form>
         </div>
