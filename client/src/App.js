@@ -20,9 +20,10 @@ function App() {
         </Route>
         <Route path='/brand-statement'>
           <p>Julia Dwyer Personal Brand Statement:
-
-“A thoughtful creative who is passionate about problem solving. As a developer I’m eager to learn and always looking for a new challenge. With a combined background in engineering and the arts, I’m passionate about combining the two to create intuitive, enjoyable and optimized experiences and products. I value working positively on a team and am excited to see what the future holds.”
-</p>
+          “A thoughtful creative who is passionate about problem solving. As a developer I’m eager to learn and always looking for a new challenge. With a combined background in engineering and the arts, I’m passionate about combining the two to create intuitive, enjoyable and optimized experiences and products. I value working positively on a team and am excited to see what the future holds.”</p>
+        </Route>
+        <Route path='/'>
+          <WhoIAm />
         </Route>
       </Layout>
     </div>
