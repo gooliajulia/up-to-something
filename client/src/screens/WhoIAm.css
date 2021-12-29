@@ -67,7 +67,7 @@ p.pipe {
     font-size: 28px;
 }
 
-span.bold {
+span.bold-me {
     font-weight: 300;
     font-style: italic;
 }

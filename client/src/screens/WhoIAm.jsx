@@ -9,7 +9,7 @@ export default function WhoIAm() {
                 <img className='about' src='../JuliaDwyerHeadshot.jpeg' alt='Julia' />
                 <h3 className='i-value'>I value <span className='animation'></span></h3>
                 <p>I'm a thoughtful creative who is passionate about problem solving. </p>
-                <p>As a developer, I get <span className='bold'>hyped</span> about designing experiences that make life better for other humans. I believe excellence is hidden in the details, and that <span className='underline'>a user's experience should feel effortless</span> and fun. </p>
+                <p>As a developer, I get <span className='bold-me'>hyped</span> about designing experiences that make life better for other humans. I believe excellence is hidden in the details, and that <span className='underline'>a user's experience should feel effortless</span> and fun. </p>
                 <p>I’m eager to learn and always looking for a new challenge. With a combined background in engineering and the arts, I’m passionate about combining the two to create intuitive, enjoyable and optimized experiences and products. I value working positively on a team, pushing the boundaries of what is possible and using technology for good. </p>
                 <p>I am so excited to see what the future holds.</p>
                 <div className='inline'>
@@ -18,6 +18,8 @@ export default function WhoIAm() {
                     <Link to='/projects'><h3 className='i-value sub-link'>Check out my work</h3></Link>
                     <p className='pipe'>|</p>
                     <a href='https://www.linkedin.com/in/julia-dwyer-software-engineer/' target='_blank'><h3 className='i-value sub-link'>LinkedIn</h3></a>
+                    <p className='pipe'>|</p>
+                    <a href='https://github.com/gooliajulia' target='_blank'><h3 className='i-value sub-link'>GitHub</h3></a>
                 </div>
 
                 {/* <p>From the jungles of Panama to European budget hostels, working with children and launching a photography business, my professional story may seem anything but linear to the outside observer, but to me it all connects. </p>

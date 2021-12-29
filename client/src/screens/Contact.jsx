@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
 import './Contact.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -46,7 +48,14 @@ export default function Contact() {
 
     return (
         <div className="contact">
+            <div className='manual-contact'>
+
+                <h2 className='form-title'><i className="fas fa-envelope"></i><FontAwesomeIcon icon={faEnvelope} /> juliadwyer93@gmail.com</h2>
+                <h2 className='form-title'>LinkedIn: Julia Dwyer on LinkedIn</h2>
+                <h2 className='form-title'>Resume: Julia Dwyer Resume</h2>
+            </div>
             <form id='contact-form' onSubmit={(e) => handleSubmit(e)} method="POST">
+                <h2 className='form-title'>Send me an email directly...</h2>
                 {/* <div className='form-group'> */}
                     <label htmlFor="name">Name</label>
                     <input name="name" type='text' className='form-control' value={name} onChange={(e)=> handleChange(e)}/>
