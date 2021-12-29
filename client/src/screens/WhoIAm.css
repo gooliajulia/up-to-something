@@ -1,0 +1,92 @@
+img.about {
+    width: 370px;
+    height: 370px;
+    object-fit: cover;
+    margin-right: 50px;
+    margin-left: 45px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    float: right;
+}
+
+div.about {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+div.info {
+    padding: 0 40px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 65px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+h3.i-value {
+    font-size: 30px;
+    font-weight: 300;
+    background: none;
+}
+
+.animation:after {
+    content: 'humility';
+    animation: values 20s  infinite;
+}
+
+p {
+    font-size: 23px;
+    font-weight: 200;
+}
+
+span.bold {
+    font-weight: 300;
+    font-style: italic;
+}
+
+span.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    
+}
+
+@keyframes values {
+    0% {
+        color: rgb(250, 160, 133);
+        content: 'minimalism';
+        
+    }
+    10% {
+        content: 'exceptional user experience';
+    }
+    20% {
+        content: 'challenge';
+    }
+    30% {
+        content: 'growth'
+    }
+    40% {
+        content: 'global connection';
+        color: rgb(250, 160, 133);
+    }
+    50% {
+        content: 'eco-consciousness';
+    }
+    60% {
+        content: 'exploration';
+    }
+    70% {
+        content: 'interactivity';
+    }
+    80% {
+        content: 'embracing the unknown';
+        color: rgb(250, 160, 133);
+    }
+    90% {
+        content: 'creative experimentation';
+    }
+}

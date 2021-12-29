@@ -3,7 +3,7 @@
 .App {
   text-align: center;
   background-color: rgb(252, 246, 240);
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 
 }
@@ -86,7 +86,7 @@ div.lined.thin:hover {
 
 
 
-
+/* 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -114,4 +114,4 @@ div.lined.thin:hover {
     transform: rotate(0deg);
   }
 
-}
+} */

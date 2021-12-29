@@ -4,7 +4,6 @@ import Layout from './layouts/Layout';
 import Projects from './screens/Projects';
 import WhoIAm from './screens/WhoIAm';
 import Contact from './screens/Contact';
-import Testimonials from './screens/Testimonials';
 
 function App() {
   return (
@@ -18,9 +17,6 @@ function App() {
         </Route>
         <Route path='/contact'>
           <Contact />
-        </Route>
-        <Route path='/testimonials'>
-          <Testimonials />
         </Route>
       </Layout>
     </div>
