@@ -3,6 +3,8 @@ import axios from 'axios';
 import './Contact.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -48,12 +50,6 @@ export default function Contact() {
 
     return (
         <div className="contact">
-            <div className='manual-contact'>
-
-                <h2 className='form-title'><i className="fas fa-envelope"></i><FontAwesomeIcon icon={faEnvelope} /> juliadwyer93@gmail.com</h2>
-                <h2 className='form-title'>LinkedIn: Julia Dwyer on LinkedIn</h2>
-                <h2 className='form-title'>Resume: Julia Dwyer Resume</h2>
-            </div>
             <form id='contact-form' onSubmit={(e) => handleSubmit(e)} method="POST">
                 <h2 className='form-title'>Send me an email directly...</h2>
                 {/* <div className='form-group'> */}
@@ -70,6 +66,12 @@ export default function Contact() {
                 {/* </div> */}
                 <button type='submit' className="btn btn-primary">Submit</button>
             </form>
+            <div className='manual-contact'>
+                <h2 className='form-title'>Or find me here...</h2>
+                <h2 className='form-title'><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</h2>
+                <h2 className='form-title'><FontAwesomeIcon icon={faPaperclip} /> Resume</h2>
+                <h2 className='form-title'><FontAwesomeIcon icon={faEnvelope} /> juliadwyer93@gmail.com</h2>
+            </div>
         </div>
     )
 }
