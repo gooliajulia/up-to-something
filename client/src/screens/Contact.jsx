@@ -3,10 +3,12 @@ import axios from 'axios';
 import './Contact.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faCopy } from '@fortawesome/free-solid-svg-icons';
 import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact() {
+    const [copy, toggleCopy] = useState('before')
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -68,9 +70,14 @@ export default function Contact() {
             </form>
             <div className='manual-contact'>
                 <h2 className='form-title'>Or find me here...</h2>
-                <h2 className='form-title'><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</h2>
+                <h2 className='form-title'><FontAwesomeIcon icon={faLinkedin} /> <a href='https://www.linkedin.com/in/julia-dwyer-software-engineer/' target='_blank'>LinkedIn</a></h2>
                 <h2 className='form-title'><FontAwesomeIcon icon={faPaperclip} /> Resume</h2>
-                <h2 className='form-title'><FontAwesomeIcon icon={faEnvelope} /> juliadwyer93@gmail.com</h2>
+                <h2 className='form-title'><FontAwesomeIcon icon={faEnvelope} /> juliadwyer93@gmail.com <FontAwesomeIcon icon={faCopy} className={copy}
+                    onClick={(e)=> {
+                        navigator.clipboard.writeText('juliadwyer93@gmail.com');
+                        toggleCopy('copied')
+                    }
+                    }/></h2>
             </div>
         </div>
     )

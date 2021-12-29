@@ -5,7 +5,6 @@ div.contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 div.manual-contact {
@@ -72,4 +71,21 @@ button.btn-primary {
 
 button.btn-primary:hover {
     background-color: rgba(250, 160, 133, .5);
+}
+
+/* .copy {
+    color: blue;
+    
+} */
+
+.copied {
+    color: rgba(250, 160, 133, .6);
+}
+
+h5.copy {
+    display: none;
+}
+
+h5.copied {
+    display:block;
 }
