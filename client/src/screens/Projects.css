@@ -10,7 +10,7 @@ div.project {
     width: 90vw;
     height: max-content;
     background-color: white;
-    margin: auto;
+    margin: 15px auto;
     border-radius: 15px;
     display: flex;
     padding: 25px;
@@ -21,7 +21,7 @@ div.project {
 }
 
 .project img {
-        width: 50vw;
+        width: 45vw;
         height: fit-content;
         object-fit: contain;
         border-radius: 5px;
@@ -91,13 +91,11 @@ a {
 }
 
 img.mobile {
-    height: 300px;
-    width: min-content;
+width: 15vw;
 }
 
 img.tablet {
-    height: 300px;
-    width: min-content;
+    width:28vw;
 }
 
 div.images {
@@ -105,4 +103,6 @@ div.images {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: flex-start;
+    row-gap: 30px;
 }
