@@ -22,7 +22,7 @@ export default function Contact() {
         console.log(formData);
         axios({
             method: "POST",
-            url:"http://localhost:3002/send",
+            url:"https://julia-dwyer-portfolio.herokuapp.com/send",
             data: formData,
         }).then((response) => {
             if (response.data.status === 'success') {
