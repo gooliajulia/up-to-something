@@ -2,7 +2,7 @@
 
 const creds = {
     USER: 'juliadwyer93@gmail.com',
-    PASS: 'Vienna2020*'
+    PASS: 'rdljzqcbnnylbpkg'
 }
 
 export default creds;
