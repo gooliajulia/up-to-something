@@ -1,0 +1,51 @@
+
+.box-one {
+    height: 500px;
+    width: 100vw;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.banner-image {
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: solid black 3px;
+    border-top: none;
+}
+
+.over-box {
+    background-color: white;
+    border: solid black 3px;
+    width: 160px;
+    padding: 0px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    float: right;
+    top: -71px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.over-box:hover > .bouncing-icon {
+    animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(20px);
+    }
+    60% {
+        transform: translateX(12px);
+    }
+}
