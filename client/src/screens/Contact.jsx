@@ -71,7 +71,7 @@ export default function Contact() {
             <div className='manual-contact'>
                 <h2 className='form-title'>Or find me here...</h2>
                 <h2 className='form-title'><FontAwesomeIcon icon={faLinkedin} /> <a href='https://www.linkedin.com/in/julia-dwyer-software-engineer/' target='_blank'>LinkedIn</a></h2>
-                <h2 className='form-title'><FontAwesomeIcon icon={faPaperclip} /> Resume</h2>
+                <h2 className='form-title'><FontAwesomeIcon icon={faPaperclip} /><a href='https://drive.google.com/file/d/1MXOk1I6_yCvtbJhuDvwVdWs4D-mplmr2/view?usp=sharing' target='_blank'> Resume</a></h2>
                 <h2 className='form-title'><FontAwesomeIcon icon={faEnvelope} /> juliadwyer93@gmail.com <FontAwesomeIcon icon={faCopy} className={copy}
                     onClick={(e)=> {
                         navigator.clipboard.writeText('juliadwyer93@gmail.com');
