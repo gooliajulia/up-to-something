@@ -13,7 +13,7 @@ function App() {
           <Landing />
       </Route> */}
       <Layout >
-        <Route path='/'>
+        <Route path='/' exact >
           <Landing />
         </Route>
         <Route path='/projects' >
