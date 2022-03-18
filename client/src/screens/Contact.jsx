@@ -52,24 +52,22 @@ export default function Contact() {
 
     return (
         <div className="contact">
-            <form id='contact-form' onSubmit={(e) => handleSubmit(e)} method="POST">
+            {/* <form id='contact-form' onSubmit={(e) => handleSubmit(e)} method="POST">
                 <h2 className='form-title'>Send me an email directly...</h2>
-                {/* <div className='form-group'> */}
+
                     <label htmlFor="name">Name</label>
                     <input name="name" type='text' className='form-control' value={name} onChange={(e)=> handleChange(e)}/>
-                {/* </div> */}
-                {/* <div className="form-group"> */}
+
                     <label htmlFor="exampleInputEmail1">Email Address</label>
                     <input name="email" type='email' className='form-control'  value={email} onChange={(e) => handleChange(e)}/>
-                {/* </div> */}
-                {/* <div className='form-group'> */}
+
                     <label htmlFor="message">Message</label>
                     <textarea name="message" className='form-control' rows="5" value={message} onChange={(e) => handleChange(e)}></textarea>
-                {/* </div> */}
+
                 <button type='submit' className="btn btn-primary">Submit</button>
-            </form>
+            </form> */}
             <div className='manual-contact'>
-                <h2 className='form-title'>Or find me here...</h2>
+                <h2 className='form-title'>Find me here...</h2>
                 <h2 className='form-title'><FontAwesomeIcon icon={faLinkedin} /> <a href='https://www.linkedin.com/in/julia-dwyer-software-engineer/' target='_blank'>LinkedIn</a></h2>
                 <h2 className='form-title'><FontAwesomeIcon icon={faPaperclip} /><a href='https://drive.google.com/file/d/1MXOk1I6_yCvtbJhuDvwVdWs4D-mplmr2/view?usp=sharing' target='_blank'> Resume</a></h2>
                 <h2 className='form-title'><FontAwesomeIcon icon={faEnvelope} /> juliadwyer93@gmail.com <FontAwesomeIcon icon={faCopy} className={copy}
